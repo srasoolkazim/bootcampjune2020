@@ -32,6 +32,6 @@ jobs:
     - name: Installing surge
       run : npm install --surge
     - name : deploying using surge
-      run : ./ bootcampjune2020.surge.sh --token $ {{secrets.my_secret}}
+      run : surge ./ bootcampjune2020.surge.sh --token $ {{secrets.my_secret}}
         echo Add other actions to build,
         echo test, and deploy your project.
